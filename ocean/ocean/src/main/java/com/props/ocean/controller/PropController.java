@@ -25,7 +25,7 @@ public class PropController {
         return  ResponseEntity.ok(p);
     }
 
-    @PostMapping("/move")
+    @PostMapping("/command")
     public ResponseEntity<Prop> move(@RequestParam String move){
 
         Prop position = service.getCurrentPosition(move);
