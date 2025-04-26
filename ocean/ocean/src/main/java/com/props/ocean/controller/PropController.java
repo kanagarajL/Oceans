@@ -32,6 +32,10 @@ public class PropController {
         return ResponseEntity.ok(position);
     }
 
+    @GetMapping("/status")
+    public String status() {
+        return service.getStatus();
+    }
 
 
 }
