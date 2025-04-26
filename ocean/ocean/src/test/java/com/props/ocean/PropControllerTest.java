@@ -29,6 +29,7 @@ public class PropControllerTest {
         pq.setY(0);
         pq.setDirection("SOUTH");
 
+
         mockMvc.perform(post("prop/init")
                 .contentType("applicatin/json")
                 .content(objectMapper.writeValueAsString(pq)))

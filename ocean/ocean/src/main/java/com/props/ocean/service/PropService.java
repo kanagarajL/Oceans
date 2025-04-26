@@ -91,6 +91,7 @@ public class PropService {
     public String getStatus() {
 
        Prop ps =  repo.findAll().get(0);
+
        return "current position : (" + ps.getX() + "," + ps.getY() +") direction is "+ ps.getDirection();
     }
 }
