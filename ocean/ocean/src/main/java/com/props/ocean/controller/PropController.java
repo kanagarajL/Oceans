@@ -25,6 +25,13 @@ public class PropController {
         return  ResponseEntity.ok(p);
     }
 
+    @PostMapping("/move")
+    public ResponseEntity<Prop> move(@RequestParam String move){
+
+        Prop position = service.getCurrentPosition(move);
+        return ResponseEntity.ok(position);
+    }
+
 
 
 }
